@@ -4,8 +4,9 @@
 ## 环境版本
 #### 本地电脑：
 1. vscode => 1.45.0
-2. Remote - SSH(vscode插件) => 0.51.0
+2. Remote - SSH => 0.51.0
 3. Debugger for Chrome => 4.12.6
+4. Vetur => 0.24.0
 #### 服务器：
 1. nodejs => v14.2.0
 2. @vue/cli => 4.3.1
@@ -17,10 +18,7 @@
 4. 新建vue.config.js添加sourcemap配置和修改devServer的host，port。（修改host为localhost的目的是livereload的地址可能是服务器内部ip地址，我们本地的电脑上可能访问不了这个地址）
 5. 跑项目，npm run serve
 6. 在remote-ssh插件的tab下forward一个前端端口到本地电脑，这样就可以在本地浏览器访问测试页面
-7. 在vscode里打断点，直接新建一个{}chrome:launch调试配置即可。
-
-## 未解决问题
-1. 我的vscode不知道为什么不能在.vue文件下打断点。
+7. 在vscode里打断点，按照[官方教程](https://cn.vuejs.org/v2/cookbook/debugging-in-vscode.html)来配置即可。
 
 ## Project setup
 ```
